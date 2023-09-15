@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626
+}
+
+.btn-yellow {
+    
+    background-color: #F9D783;
+    border: 1px solid #F9D783;
+    color:#262626;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+header {
+    background-color: #F0EFE9;
+    padding: 16px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        
+        .menu-bar {
+            background-color: transparent;
+            border: none;
+            font-size: 35px;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .menu {
+            display: none;
+            flex: 1;
+
+            @media (min-width: 992px) {
+                display: block;
+            }
+
+            .contact-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 3px solid #DAD9D3;
+                padding-bottom: 10px;
+
+                .contact-information {
+                    display: flex;
+                    align-items: center;
+
+                    .content {
+                        padding-right: 25px;
+                        margin-right: 25px;
+                        border-right: 3px solid #DAD9D3;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        font-weight: 300;
+
+                        i {
+                            font-size: 1.2em;
+                            margin-right: 5px;
+                            
+                        }
+
+                        &.last {
+                            border: none;
+                        }
+                    }
+                }
+
+                .social-media {
+
+                    a {
+                        color:#262626;
+                        font-size: 1.2em;
+                        margin-left: 8px;
+
+                        &:hover {
+                            color: grey;
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            
+            .main-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 20px;
+
+                nav {
+
+                    a {
+                    display: inline-block;
+                    color:#262626;
+                    text-decoration: none;
+                    margin-right: 30px;
+                    position: relative;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        position: absolute;
+                        font-weight: 500;
+                        height: 2px;
+                        width: 15px;
+                        background-color:#262626;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
+                    }
+                   } 
+                }
+            }
+        }
+        @media (min-width: 2500px) {
+            width: 2048px;
+        }
+    }   
+}
