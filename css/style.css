@@ -16,6 +16,13 @@ html, body {
   font-size: 16px;
   border-radius: 25px;
 }
+.btn-yellow i {
+  margin-left: 5px;
+}
+.btn-yellow:hover {
+  background-color: #262626;
+  color: rgb(239, 234, 234);
+}
 
 header {
   background-color: #F0EFE9;
