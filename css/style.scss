@@ -203,3 +203,13 @@ header {
         }
     }
 }
+.logotype-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        }
+}

@@ -168,3 +168,12 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .showcase .container img {
   margin-right: -50px;
 }
+
+.logotype-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.logotype-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
